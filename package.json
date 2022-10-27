@@ -7,13 +7,10 @@
   "license": "BSD-3-Clause",
   "funding": "https://github.com/sponsors/outline",
   "scripts": {
-    "test": "jest",
-    "lint": "tsc --noEmit && eslint '*/**/*.{js,ts,tsx}' --quiet",
-    "start": "start-storybook -p 6006",
-    "build": "tsc",
-    "preversion": "yarn build",
-    "watch": "yarn tsc-watch",
-    "build-storybook": "build-storybook"
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
   },
   "serve": {
     "open": true,
@@ -25,6 +22,9 @@
     ]
   },
   "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-scripts": "5.0.1",
     "copy-to-clipboard": "^3.0.8",
     "fuzzy-search": "^3.2.1",
     "gemoji": "6.x",
@@ -51,6 +51,7 @@
     "react-portal": "^4.2.1",
     "refractor": "^3.3.1",
     "resize-observer-polyfill": "^1.5.1",
+    "rich-markdown-editor": "^11.21.3",
     "slugify": "^1.4.0",
     "smooth-scroll-into-view-if-needed": "^1.1.29"
   },
@@ -128,5 +129,17 @@
   "bugs": {
     "url": "https://github.com/outline/rich-markdown-editor/issues"
   },
-  "homepage": "https://github.com/outline/rich-markdown-editor#readme"
+  "homepage": "https://github.com/outline/rich-markdown-editor#readme",
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
 }
